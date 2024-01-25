@@ -9,10 +9,15 @@ This single page will allow a user to view data about all Pokemon and Pokemon ty
 Tech stack
 -----------
 AJAX - dynamically load new data into an already loaded page. 
+
 Html
+
 Javascript
+
 CSS
+
 Node.js
+
 Express.js
 
 Structure of project and data
