@@ -4,7 +4,7 @@ Pokemon Data Viewer
 Introduction
 -----------
 This single page will allow a user to view data about all Pokemon and Pokemon types. As the user selects options on the page, the data will be loaded dynamically from the server with fetch requests and displayed on the page through client-side JavaScript code. 
-![Screenshot of the web page](./web-assignment-pokemon/public/images/pokemonDataViewerScreenshot.jpg)
+![Screenshot of the web page](./web-assignment-pokemon/public/images/pokemonDataViewerScreenshot.png)
 
 Tech stack
 -----------
