@@ -1,0 +1,125 @@
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "h h h h h"
+    "fa l m r e"
+    "f f f f f";
+    background-image: url('../images/Background.jpg');
+    background-size: 45%, 45%;
+    
+}
+#header {
+    grid-area: h;
+    text-align: center;
+    padding: 30px;
+    font-family: fantasy;
+    color: #443a0ae8;
+    font-size: 150%;
+    
+}
+#favorite {
+    grid-area: fa;
+    background-color: #FDEFEF;
+    font-style: italic;
+   
+}
+#left {
+    grid-area: l;
+    background-color: #DAD0C2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    font-size: 150%;
+}
+#middle {
+    grid-area: m;
+    background-color: #F4DFD0;
+}
+#right {
+    grid-area: r;
+    background-color: #DAD0C2;
+    
+}
+#extra {
+    grid-area: e;
+    background-color: #FDEFEF;
+   
+   
+}
+#footer {
+    grid-area: f;
+    background-color: #CDBBA7;
+    text-align: center;
+    padding: 20px;
+}
+
+caption {
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    table-layout: auto;
+    width: 100%;
+}
+th, td{
+    border: #FDEFEF 1px solid;
+    padding: 5px;
+}
+
+table thead tr{
+    background-color: #CDBBA7;  
+}
+table tbody:nth-child(even) tr{
+    background-color:#CDBBA7;  
+}
+#img {
+    transform: rotate(5deg);
+    transition: transform 1s ease;
+    text-align: center;
+
+}
+#img:hover {
+    transform: rotate(0deg);
+
+}
+#favorite, #left, #middle, #right, #extra {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    /*box-shadow code is from https://getcssscan.com/css-box-shadow-examples*/
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+}
+
+#favoriteUnderline, #extraUnderline{
+    border-bottom: #443a0ae8 3px dashed;
+}
+#weightP, #heightP, #habitatP {
+    font-size: 130%;
+    background-color: #F4DFD0;
+}
+#weight, #height, #habitat {
+    font-weight: bold;
+    color: rgb(121, 100, 7);
+}
+#description {
+    color: rgb(121, 100, 7);
+    font-style: italic;
+}
+@media (max-width:700px) {
+    #container{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto auto auto auto;
+      grid-template-areas: 
+      "h"
+      "fa"
+      "l"
+      "m"
+      "r"
+      "e"
+      "f";
+    }
+}
